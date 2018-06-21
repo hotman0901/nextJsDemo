@@ -19,11 +19,14 @@ export default class Index extends Component {
                         }
                     `}
                 </style>
-                <style global jsx>{`
-                    body {
-                        background: black;
-                    }
-                `}</style>
+                {/* 全域 */}
+                <style global jsx>
+                    {`
+                        body {
+                            background: black;
+                        }
+                    `}
+                </style>
             </div>
         );
     }

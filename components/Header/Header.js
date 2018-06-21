@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+// styleed-component
 const Content = styled.span`
     color: red;
     font-size: 50px;
