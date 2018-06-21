@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import Header from '../components/Header/Header';
 import Head from 'next/head'
+import Link from 'next/link';
 import "../style/index.scss"
 
 
 export default class Index extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+    componentDidMount() {
+    }
     render() {
         return (
             <div className="co_index">
@@ -15,6 +22,15 @@ export default class Index extends Component {
                 <Header />
                 <p>hihi index</p>
                 <span className="yaya">yayayya</span>
+                <Link href="/photo">
+                    <a>photo</a>
+                </Link>
+                <br/>
+                {/* 加入參數 */}
+                <Link href={{ pathname: '/nextStar', query: { name: 'Zeit' } }}>
+                    <a>nextStar</a>
+                </Link>
+                
                 <style jsx>
                     {`
                         .co_index {
