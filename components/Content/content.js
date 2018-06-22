@@ -1,10 +1,11 @@
 import React from 'react'
+import Link from 'next/link';
 
 export const Content = (props) => {
     return(
-        <div className="c_content">
-            <h1>scss content</h1>
-        </div>
+        <Link>
+            <a>scss content</a>
+        </Link>
     )
 }
 

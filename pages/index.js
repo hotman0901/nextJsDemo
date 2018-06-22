@@ -1,36 +1,45 @@
 import React, { Component } from 'react';
-import Header from '../components/Header/Header';
-import Head from 'next/head'
+import Header from '../components/Header/header';
+import Head from 'next/head';
 import Link from 'next/link';
-import "../style/index.scss"
-
+import '../style/index.scss';
 
 export default class Index extends Component {
     constructor(props) {
         super(props);
         this.state = {};
     }
-    componentDidMount() {
-    }
+    componentDidMount() {}
     render() {
         return (
             <div className="co_index">
                 <Head>
-                    <title>My page title</title>    
-                    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                    <title>My page title</title>
+                    <meta
+                        name="viewport"
+                        content="initial-scale=1.0, width=device-width"
+                    />
                 </Head>
                 <Header />
                 <p>hihi index</p>
                 <span className="yaya">yayayya</span>
+                <hr/>
+                <p>link</p>
                 <Link href="/photo">
                     <a>photo</a>
                 </Link>
-                <br/>
+                <hr/>
                 {/* 加入參數 */}
+                <p>link with query</p>
                 <Link href={{ pathname: '/nextStar', query: { name: 'Zeit' } }}>
                     <a>nextStar</a>
                 </Link>
-                
+                <hr/>
+                <p>link with replace</p>
+                <Link href="/photo" replace>
+                    <a>nextStar</a>
+                </Link>
+
                 <style jsx>
                     {`
                         .co_index {
@@ -39,7 +48,7 @@ export default class Index extends Component {
                         }
 
                         p {
-                            color: red;
+                            color: #fff;
                         }
                     `}
                 </style>
