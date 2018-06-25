@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Header from '../components/Header/header';
 import Head from 'next/head';
-import Link from 'next/link';
 import '../style/index.scss';
 
-export default class LinkDemo extends Component {
+
+export default class Index extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -21,21 +21,9 @@ export default class LinkDemo extends Component {
                     />
                 </Head>
                 <Header />
-                <Link href="/staticFileDemo">
-                    <a>photo</a>
-                </Link>
+                <p>hihi index</p>
+                <span className="yaya">yayayya</span>
                 <hr/>
-                {/* 加入參數 */}
-                <p>link with query</p>
-                <Link href={{ pathname: '/nextStar', query: { name: 'Zeit' } }}>
-                    <a>nextStar</a>
-                </Link>
-                <hr/>
-                <p>link with replace</p>
-                <Link href="/nextStar" replace>
-                    <a>nextStar</a>
-                </Link>
-
                 <style jsx>
                     {`
                         .co_index {

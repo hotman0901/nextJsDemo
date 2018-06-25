@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Router from 'next/router';
+import Header from '../components/Header/header'
 
 export default class RouterDemo extends Component {
     constructor(props) {
@@ -20,7 +21,7 @@ export default class RouterDemo extends Component {
 
     handleClick2 = () => {
         Router.push({
-            pathname: '/photo',
+            pathname: '/staticFileDemo',
             query: {
                 name: 'hello'
             }
@@ -28,20 +29,20 @@ export default class RouterDemo extends Component {
     };
 
     handleClick3 = () => {
-        const href = '/routerDemo?counter=10';
+        const href = '/routerDemo1?counter=10';
         const as = href;
         Router.push(href, as, { shallow: true });
     };
 
     componentWillReceiveProps(nextProps) {
         const { pathname, query } = nextProps.url
-        console.log(13123213123123123);
         // fetch data based on the new query
     }
 
     render() {
         return (
             <div>
+                <Header />
                 <p>Router</p>
                 <span onClick={this.handleClick1} className="click">
                     click router1
