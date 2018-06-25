@@ -7,11 +7,6 @@ export default class PrefetchHeader extends Component {
             <nav>
                 <ul>
                     <li>
-                        <Link prefetch href="/">
-                            <a>Home</a>
-                        </Link>
-                    </li>
-                    <li>
                         <Link prefetch href="/cssDemo">
                             <a>cssDemo</a>
                         </Link>
