@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../components/Header/header';
+import StyledCmp from '../components/CssCmp/styledCmp';
 import Head from 'next/head';
+import styled from 'styled-components';
 import '../style/index.scss';
 
 
@@ -21,18 +23,14 @@ export default class Index extends Component {
                     />
                 </Head>
                 <Header />
-                <p>hihi index</p>
+                <p className="hi">hihi index</p>
                 <span className="yaya">yayayya</span>
                 <hr/>
                 <style jsx>
                     {`
-                        .co_index {
-                            font-size: 30px;
-                            color: gray;
-                        }
-
-                        p {
-                            color: #fff;
+                        .co_index p{
+                            color: red;
+                            font-size: 60px;
                         }
                     `}
                 </style>
@@ -44,6 +42,7 @@ export default class Index extends Component {
                         }
                     `}
                 </style>
+                <StyledCmp />
             </div>
         );
     }

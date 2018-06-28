@@ -35,7 +35,7 @@ export default class RouterDemo extends Component {
     };
 
     componentWillReceiveProps(nextProps) {
-        const { pathname, query } = nextProps.url
+        // const { pathname, query } = nextProps.url
         // fetch data based on the new query
     }
 

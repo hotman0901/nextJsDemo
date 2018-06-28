@@ -16,27 +16,28 @@ export default class Header extends Component {
                 <br/>
                 <Content>content</Content>
                 <br/>
-                <Link href="/linkDemo">
-                    <a>linkDemo</a>
-                </Link>
                 <Link href="/cssDemo">
                     <a>cssDemo</a>
+                </Link>
+                <Link href="/staticFileDemo">
+                    <a>staticFileDemo</a>
+                </Link>
+                <Link href="/linkDemo">
+                    <a>linkDemo</a>
                 </Link>
                 <Link href="/passHrefDemo">
                     <a>passHrefDemo</a>
                 </Link>
                 <Link href="/routerDemo1">
-                    <a>routerDemo1</a>
+                    <a>next/routerDemo1</a>
                 </Link>
                 <Link href="/routerDemo2">
-                    <a>routerDemo2</a>
+                    <a>withRouterDemo2</a>
                 </Link>
-                <Link href="/staticFileDemo">
-                    <a>staticFileDemo</a>
-                </Link>
-                <Link href="/prefetchDemo">
+                
+                {/* <Link href="/prefetchDemo">
                     <a>prefetchDemo</a>
-                </Link>
+                </Link> */}
                 
                 <style jsx>{`
                     .hello {

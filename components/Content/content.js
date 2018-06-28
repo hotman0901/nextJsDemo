@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const Content = (props) => {
     return(
         <Link>
-            <a>scss content</a>
+            <a>with style.scss content</a>
         </Link>
     )
 }
