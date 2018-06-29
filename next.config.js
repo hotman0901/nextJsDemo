@@ -1,5 +1,4 @@
 const withSass = require('@zeit/next-sass')
-const merge = require('webpack-merge');
 
 module.exports = withSass()
 
