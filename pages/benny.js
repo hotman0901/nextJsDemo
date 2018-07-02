@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../style/index.scss';
 
 export default class Benny extends Component {
     static getInitialProps(props) {
