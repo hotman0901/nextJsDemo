@@ -1,11 +1,12 @@
 import { ajax } from 'rxjs/ajax';
-import { switchMap, map, catchError, startWith } from 'rxjs/operators';
-
+import { timer } from 'rxjs/observable/timer';
+import { switchMap, map, catchError, startWith, debounce } from 'rxjs/operators';
 import * as starActions from '../actions/star';
 import * as types from '../actions/actionTypes';
 
 const getStarEpic = action$ =>
     action$.ofType(types.GET_STAR$).pipe(
+        debounce(() => timer(1000)),
         switchMap(() =>
             ajax({
                 url: 'https://api.github.com/repos/zeit/next.js',
