@@ -16,6 +16,8 @@ export default class Benny extends Component {
     }
     componentDidMount() {
         // console.log(this.props);
+        // console.log(window)
+        // window.open("https://www.w3schools.com");
     }
     render() {
         return <div className="class-name">benny</div>;
