@@ -18,9 +18,9 @@ import { reducer } from '../reducers';
 import rootEpic from '../epic';
 import { createEpicMiddleware } from 'redux-observable';
 
-const epicMiddleware = createEpicMiddleware();
 
 export const initStore = initialState => {
+    const epicMiddleware = createEpicMiddleware();
     const store = createStore(
         reducer,
         initialState,
